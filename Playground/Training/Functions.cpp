@@ -1,0 +1,9 @@
+#include "stdafx.h"
+
+int sum(int x, int y) {
+    return x + y;
+}
+
+double sum(double x, double y) {
+    return x + y;
+}
