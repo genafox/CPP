@@ -7,9 +7,10 @@ Transaction::Transaction(int amount, string type)
 {
     this->amount = amount;
     this->type = type;
+    this->Marker = "Transaction";
 }
 
-string Transaction::Report()
+string Transaction::Report() const // indicates that this function does not change any of class`s members
 {
     string report;
     report += "    ";

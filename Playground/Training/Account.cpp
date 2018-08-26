@@ -26,7 +26,8 @@ bool Account::Deposit(int amount)
 {
     if (amount > 0) {
         this->balance += amount;
-        this->log.push_back(Transaction(amount, "Deposit"));
+        Transaction t(amount, "Deposit");
+        this->log.push_back(t);
 
         return true;
     }
